@@ -5,7 +5,8 @@ module.exports = function (environment) {
     modulePrefix: 'dummy',
     environment,
     rootURL: '/',
-    locationType: 'auto',
+    locationType: 'trailing-history',
+
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -21,6 +22,21 @@ module.exports = function (environment) {
       // Here you can pass flags/options to your application instance
       // when it is created
     },
+
+    'field-guide': {
+      name: 'More Ember Confetti',
+      copyright:
+        'This is the default copyright string - update before publishing',
+      social: [
+        {
+          name: 'github',
+          title: 'More Ember Confetti Add-on',
+          link: 'https://github.com/minthamie/more-ember-confetti',
+        },
+      ],
+    },
+
+    historySupportMiddleware: true,
   };
 
   if (environment === 'development') {
