@@ -14,6 +14,12 @@ export default class ConfettiService extends Service {
   }
 
   async fire(options) {
+    // canvas-confetti makes use of the document and it doesn't really make
+    // sense to run it in fastboot
+    if (typeof FastBoot !== 'undefined') {
+      return;
+    }
+
     let fire = await this.load();
     return fire(options);
   }
