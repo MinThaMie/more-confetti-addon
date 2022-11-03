@@ -1,13 +1,13 @@
 {
   "name": "more-ember-confetti",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "1.0.0",
+  "description": "The confetti addon for Ember",
   "keywords": [
     "ember-addon"
   ],
-  "repository": "",
+  "repository": "https://github.com/MinThaMie/more-confetti-addon",
   "license": "MIT",
-  "author": "",
+  "author": "Anne-Greeth Schot-van Herwijnen",
   "directories": {
     "doc": "doc",
     "test": "tests"

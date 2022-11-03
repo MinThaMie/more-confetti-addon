@@ -24,14 +24,14 @@ module.exports = function (environment) {
     },
 
     'field-guide': {
-      name: 'More Ember Confetti add-on',
+      name: 'More Ember Confetti addon',
       tagLine: 'More Ember Confetti',
 
       logo: '/confetti.svg',
       social: [
         {
           name: 'github',
-          title: 'More Ember Confetti Add-on',
+          title: 'More Ember Confetti Addon',
           link: 'https://github.com/MinThaMie/more-confetti-addon',
         },
       ],

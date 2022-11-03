@@ -1,10 +1,10 @@
-# More-Ember-Confetti Add-on
+# More-Ember-Confetti Addon
 
-This add-on provides you with an Ember helper that implements the [canvas-confetti package](https://www.npmjs.com/package/canvas-confetti). So you can call the `confetti`-helper in your template and pass along any attributes specified in the API.
+This addon provides you with an Ember helper that implements the [canvas-confetti package](https://www.npmjs.com/package/canvas-confetti). So you can call the `confetti`-helper in your template and pass along any attributes specified in the API.
 
-## Installing the add-on
+## Installing the addon
 
-You install this add-on like any other.
+You install this addon like any other.
 ```sh
 ember install more-ember-confetti
 ```
@@ -16,6 +16,6 @@ ember install more-ember-confetti
 - `originX` _Number (default:0.5)_: The x position on the page, with 0 being the left edge and 1 being the right edge. This is used to construct the `origin` object needed by the `canvas-confetti` API.
 - `originY` _Number (default:0.5)_: The y position on the page, with 0 being the top edge and 1 being the bottom edge. This is used to construct the `origin` object needed by the `canvas-confetti` API.
 
-## Contributing to the add-on
+## Contributing to the addon
 
 If you want to contribute to this project or run into a bug, please reach out on [GitHub](https://github.com/minthamie/more-ember-confetti) or find me on the [EmberJS discord](https://discord.com/channels/480462759797063690/480462759797063692).
