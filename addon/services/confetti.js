@@ -24,11 +24,5 @@ export default class ConfettiService extends Service {
     return fire(options);
   }
 
-  async reset() {
-    let confetti = await this.load();
-
-    confetti.reset();
-  }
-
   play() {}
 }

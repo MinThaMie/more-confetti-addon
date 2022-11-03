@@ -1,12 +1,13 @@
 import Helper from '@ember/component/helper';
 import { inject as service } from '@ember/service';
-import { later } from '@ember/runloop';
+import { later, cancel } from '@ember/runloop';
 
 export default class Confetti extends Helper {
   @service confetti;
 
-  colors;
   options;
+  running;
+  scheduledConfetti;
 
   compute(_, named) {
     let {
@@ -21,20 +22,24 @@ export default class Confetti extends Helper {
       y: originY,
     };
     options = { ...options, origin: origin };
+    this.running = true;
     this.fire(options, interval, continuous);
   }
 
   async fire(options, interval, continuous = true) {
     this.confetti.fire(options);
-    if (continuous) {
-      later(() => {
+    if (continuous && this.running) {
+      this.scheduledConfetti = later(() => {
         this.fire(options, interval);
       }, interval);
     }
   }
 
   willDestroy() {
-    this.confetti.running = false;
-    this.confetti.reset();
+    if (this.scheduledConfetti) {
+      cancel(this.scheduledConfetti);
+      this.scheduledConfetti = null;
+    }
+    this.running = false;
   }
 }
