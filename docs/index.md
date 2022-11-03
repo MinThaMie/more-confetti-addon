@@ -11,8 +11,8 @@ ember install more-ember-confetti
 
 ## Custom API options
 
-- `interval` _Number (default: 2000)_: The time it will take for the confetti to fire again
-- `continuous` _Boolean (default: true)_: The confitte will continue to pop when this is true.
+- `interval` _Number (default: 2000)_: The time (in ms) it will take for the confetti to fire again
+- `continuous` _Boolean (default: true)_: The confetti will continue to pop when this is true.
 - `originX` _Number (default:0.5)_: The x position on the page, with 0 being the left edge and 1 being the right edge. This is used to construct the `origin` object needed by the `canvas-confetti` API.
 - `originY` _Number (default:0.5)_: The y position on the page, with 0 being the top edge and 1 being the bottom edge. This is used to construct the `origin` object needed by the `canvas-confetti` API.
 
